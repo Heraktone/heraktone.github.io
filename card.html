@@ -1,0 +1,36 @@
+<!-- import latest release version of all components from polygit -->
+<link rel="import" href="https://polygit.org/components/polymer/polymer.html">
+
+<dom-module id="material-card">
+  <template>
+    <style>
+      :host {
+        font-family: sans-serif;
+      };
+    </style>
+
+    <div class="mdl-grid portfolio-max-width">
+      <div class="mdl-cell mdl-card mdl-shadow--4dp">
+        <div class="mdl-card__media">
+            <img class="" src="" border="0" alt="">
+        </div>
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Truc 1</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+            Je suis un texte
+       </div>
+        <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="contact.html">Read more</a>
+        </div>
+      </div>
+    </div>
+    
+  </template>
+
+  <script>
+    Polymer({
+      is: "material-card",
+    });
+  </script>
+</dom-module>

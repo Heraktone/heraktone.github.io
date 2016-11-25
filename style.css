@@ -38,3 +38,8 @@ a.mdl-button {
   text-align: center;
   font-style: italic;
 }
+
+.imgs-card {
+  width: 100%;
+  height: auto;
+}

@@ -1,4 +1,17 @@
 .cards {
-  max-width: 1040px;
+  max-width: 1050px;
   margin: auto;
+}
+.menu-princ {
+  text-align: center;
+  margin: auto !important;
+  max-width: 900px;
+  width: 100%;
+  text-transform: uppercase;
+}
+.mdl-navigation__link {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  line-height: 42px;
 }

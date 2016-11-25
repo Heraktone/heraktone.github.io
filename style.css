@@ -25,3 +25,16 @@ header {
 a.mdl-button {
   float: right;
 }
+
+.portfolio-contact {
+  text-align: center;
+}
+
+.mdl-layout__title.style-scope.my-app {
+  max-width: 150 px;
+  margin: auto;
+  font-size: 160% !important;
+  font-weight: 900 !important;
+  text-align: center;
+  font-style: italic;
+}

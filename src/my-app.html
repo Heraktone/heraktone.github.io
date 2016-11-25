@@ -34,26 +34,22 @@
               </span>
           </div>
           <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
-              <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                  <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
-                    <a name="portfolio" href="/portfolio">Portfolio</a>
-                    <a name="portfolio" href="/portfolio">Blog</a>
-                    <a name="about" href="/about">About</a>
-                    <a name="contact" href="/contact">Contact</a>
-                  </iron-selector>
-              </nav>
+              <iron-selector selected="[[page]]" attr-for-selected="name" class="mdl-navigation mdl-typography--body-1-force-preferred-font drawer-list" role="navigation">
+                <a class="mdl-navigation__link" name="portfolio" href="/portfolio">Portfolio</a>
+                <a class="mdl-navigation__link" name="portfolio" href="/portfolio">Blog</a>
+                <a class="mdl-navigation__link" name="about" href="/about">About</a>
+                <a class="mdl-navigation__link" name="contact" href="/contact">Contact</a>
+              </iron-selector>
           </div>
       </header>
       <div class="mdl-layout__drawer mdl-layout--small-screen-only">
           <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
             <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
-              <a name="portfolio" href="/portfolio">Portfolio</a>
-              <a name="view2" href="/view2">View Two</a>
-              <a name="view3" href="/view3">View Three</a>
+              <a class="mdl-navigation__link" name="portfolio" href="/portfolio">Portfolio</a>
+              <a class="mdl-navigation__link" name="portfolio" href="/portfolio">Blog</a>
+              <a class="mdl-navigation__link" name="about" href="/about">About</a>
+              <a class="mdl-navigation__link" name="contact" href="/contact">Contact</a>
             </iron-selector>
-              <a class="mdl-navigation__link" href="blog.html">Blog</a>
-              <a class="mdl-navigation__link" href="about.html">About</a>
-              <a class="mdl-navigation__link" href="contact.html">Contact</a>
           </nav>
       </div>
       <div class = "mdl-layout__content">

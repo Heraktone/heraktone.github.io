@@ -14,4 +14,14 @@
       -ms-flex: 1;
           flex: 1;
   line-height: 42px;
+  font-size: 140% !important;
+  font-weight: 900 !important;
+}
+
+header {
+  background-image: url(img/header.jpg);
+}
+
+a.mdl-button {
+  float: right;
 }

@@ -43,3 +43,9 @@ a.mdl-button {
   width: 100%;
   height: auto;
 }
+
+.mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}

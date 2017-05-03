@@ -1,0 +1,31 @@
+<link rel="import" href="../bower_components/paper-dialog/paper-dialog.html">
+<link rel="import" href="../bower_components/neon-animation/animations/fade-out-animation.html">
+<link rel="import" href="../bower_components/neon-animation/animations/scale-up-animation.html">
+<link rel="import" href="../bower_components/paper-dialog-behavior/paper-dialog-behavior.html">
+<link rel="import" href="../bower_components/paper-dialog-behavior/paper-dialog-shared-styles.html">
+
+<dom-module id="modal-main">
+  <template>
+    <style include="paper-dialog-shared-styles"></style>
+    <content></content>
+    <div class="buttons">
+      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent style-scope material-card" id="ModalLink">Link to the project</a>
+      <paper-button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent style-scope material-card" dialog-confirm on-tap="popout">Return</paper-button>
+    </div>
+ </template>
+
+
+  <script>
+    Polymer({
+      is: "modal-main",
+      behaviors: [
+        Polymer.PaperDialogBehavior
+      ],
+      properties: {
+      },
+      popout: function() {
+        $('#dialogMain').toggle();
+      }
+    });
+  </script>
+</dom-module>

@@ -13,16 +13,14 @@
         <img class="imgs-card" src="[[image]]" border="0" alt="">
     </div>
     <div class="mdl-card__title">
-        <h2 class="mdl-card__title-text">[[title]]</h2>
+        <h2 id="titleCard" class="mdl-card__title-text"></h2>
     </div>
-    <div class="mdl-card__supporting-text">
-        [[desc]]
+    <div id="contentCard" class="mdl-card__supporting-text">
    </div>
     <div class="mdl-card__actions mdl-card--border">
-        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="[[link]]">More</a>
+      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" on-tap="popup">More</a>
     </div>
   </template>
-
   <script>
     Polymer({
       is: "material-card",
@@ -30,7 +28,18 @@
         desc: String,
         title: String,
         link: String,
-        image: String
+        image: String,
+        lid: String
+      },
+      popup: function() {
+        $('#dialogMainTitle')[0].innerHTML = this.title;
+        $('#dialogMainContent')[0].innerHTML = this.desc;
+        $('#ModalLink')[0].setAttribute('href', this.link);
+        $('#dialogMain').toggle();
+      },
+      attached: function() {
+        this.$.titleCard.textContent = this.title;
+        this.$.contentCard.innerHTML = this.desc.substring(0,150) + "...";
       }
     });
   </script>

@@ -6,7 +6,7 @@ modal-main {
     bottom: 0;
     padding: 0;
     margin: 0;
-    z-index: 999999;
+    z-index: 20;
 }
 .buttons {
   position:absolute!important;
@@ -31,11 +31,20 @@ modal-main {
   line-height: 42px;
   font-size: 140% !important;
   font-weight: 900 !important;
+  bottom:0;
+  color: white!important;
+}
+
+.mdl-navigation__link:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+  border-bottom: 5px solid black;
 }
 
 header {
-  background-image: url(img/header.jpg);
+ background-image: url(img/header1.jpg);
+ background-size: cover;
 }
+
 
 a.mdl-button {
   float: right;
@@ -48,10 +57,12 @@ a.mdl-button {
 .mdl-layout__title.style-scope.my-app {
   max-width: 150 px;
   margin: auto;
+  color:white;
   font-size: 160% !important;
   font-weight: 900 !important;
   text-align: center;
   font-style: italic;
+  z-index:9;
 }
 
 .imgs-card {
@@ -67,4 +78,47 @@ a.mdl-button {
 
 #contentCard {
   text-align: justify;
+}
+
+.mdl-card {
+  /*background: grey!important;*/
+}
+
+html {
+  
+  background-image: url(img/FOND.jpg);
+  background-size: cover;
+  /*background: grey;*/
+}
+.mdl-layout__header-row {
+  position: relative!important;
+  bottom:0px;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.8)!important;
+}
+
+modal-main img {
+  display: block;
+  width : 80%;
+  padding-top: 10px;
+  text-align: center;
+  margin: auto;
+}
+
+#dialogMainContent {
+    text-align: justify;
+}
+
+.paper-dialog-scrollable-0 .fit.paper-dialog-scrollable {
+    position: relative!important;
+    margin: 25px;
+}
+
+paper-dialog-scrollable { 
+  position:absolute!important;
+  top: 40px;
+  bottom:56px;
+  overflow-y:scroll; 
 }

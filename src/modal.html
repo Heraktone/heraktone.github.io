@@ -2,15 +2,19 @@
 <link rel="import" href="../bower_components/neon-animation/animations/fade-out-animation.html">
 <link rel="import" href="../bower_components/neon-animation/animations/scale-up-animation.html">
 <link rel="import" href="../bower_components/paper-dialog-behavior/paper-dialog-behavior.html">
+<link rel="import" href="../bower_components/paper-dialog-scrollable/paper-dialog-scrollable.html">
 <link rel="import" href="../bower_components/paper-dialog-behavior/paper-dialog-shared-styles.html">
 
 <dom-module id="modal-main">
   <template>
     <style include="paper-dialog-shared-styles"></style>
-    <content></content>
+     <h2 id="dialogMainTitle">Header</h2>
+    <paper-dialog-scrollable id="dialogMainContent">
+      content
+    </paper-dialog-scrollable>
     <div class="buttons">
       <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent style-scope material-card" id="ModalLink">Link to the project</a>
-      <paper-button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent style-scope material-card" dialog-confirm on-tap="popout">Return</paper-button>
+      <paper-button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent style-scope material-card" dialog-confirm on-tap="popout">< Return</paper-button>
     </div>
  </template>
 

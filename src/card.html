@@ -33,7 +33,7 @@
       },
       popup: function() {
         $('#dialogMainTitle')[0].innerHTML = this.title;
-        $('#dialogMainContent')[0].innerHTML = this.desc;
+        $('#dialogMainContent .scrollable')[0].innerHTML = this.desc;
         $('#ModalLink')[0].setAttribute('href', this.link);
         $('#dialogMain').toggle();
       },

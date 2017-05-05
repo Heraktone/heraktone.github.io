@@ -121,4 +121,5 @@ paper-dialog-scrollable {
   top: 40px;
   bottom:56px;
   overflow-y:scroll; 
+  width:100%;
 }

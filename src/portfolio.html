@@ -12,7 +12,7 @@
         font-family: sans-serif;
       };
     </style>
-    <iron-ajax url="https://spreadsheets.google.com/feeds/list/1unTVSFvwAqQSM703FtODyZTyseMZJP6A4xjwfF7WVLs/od6/public/values?alt=json" last-response="{{data}}" auto></iron-ajax>
+    <iron-ajax url="https://sheets.googleapis.com/v4/spreadsheets/1unTVSFvwAqQSM703FtODyZTyseMZJP6A4xjwfF7WVLs/values/Sheet1?alt=json&key=AIzaSyDiTH2D1mh3m4eimQhrcyI2QNF4h8LXNtI" last-response="{{data}}" auto></iron-ajax>
     <div class="mdl-grid portfolio-max-width cards">
       <template is="dom-repeat" items="{{data.feed.entry}}">
         <material-card class="mdl-cell mdl-card mdl-shadow--4dp" image="{{item.gsx$image.$t}}" lid="{{item.gsx$id.$t}}" title="{{item.gsx$title.$t}}" desc="{{item.gsx$desc.$t}}" link="{{item.gsx$link.$t}}"></material-card>
